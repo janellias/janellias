@@ -1,0 +1,12 @@
+<h1>Rate your favorite books:<h1>
+
+
+<% @books.each do |book| %>
+  <div>
+    <h2><%= book.title %></h2>
+    <i><%= book.author %></i><br />
+    <p><%= book.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
